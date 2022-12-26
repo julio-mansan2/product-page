@@ -1,0 +1,6 @@
+:root {
+    --white: #fff;
+    --dark-gray: hsl(0, 0%, 48%);
+    --strong-cyan: hsl(176, 72%, 28%);
+    --moderate-cyan: hsl(176, 50%, 47%);
+}

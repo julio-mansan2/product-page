@@ -1,0 +1,290 @@
+@media (max-width: 700px) {
+    .header {
+        position: relative;
+        background-image: url(../images/image-hero-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    #menu__toggle:checked+.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .menu__btn {
+        top: 1.8rem;
+        right: 7%;
+        position: absolute;
+        width: 1.25rem;
+        height: 1.25rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        transition-duration: .25s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .header ul {
+        position: absolute;
+        top: 30%;
+        width: 80%;
+        gap: 1.25rem;
+        height: fit-content;
+        background-color: #fff;
+        left: -100%;
+        padding: 1.8rem;
+        border-radius: 0.6rem;
+        align-items: flex-start;
+        flex-direction: column;
+        background-size: contain;
+        transition-duration: .25s;
+        box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.75);
+    }
+
+    .header li a {
+        color: #000;
+        font-weight: 600;
+    }
+
+    .aparecer {
+        left: 10% !important;
+    }
+
+    .main {
+        padding: 5%;
+    }
+
+    .container {
+        gap: 1.25rem;
+    }
+
+    .intro {
+        padding: 1.8rem;
+    }
+
+    .intro img {
+        top: -15%;
+    }
+
+    .bookmark {
+        display: none;
+    }
+
+    .bookmarked {
+        display: none;
+    }
+
+    .stats {
+        padding: 1.8rem;
+    }
+
+    .stats section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1.8rem;
+        width: 100%;
+    }
+
+    .stats hr {
+        width: 100%;
+    }
+
+    .about {
+        padding: 1.8rem;
+    }
+
+    .about section:last-child article {
+        padding: 1.25rem;
+    }
+
+    .about article > div:first-child {
+        flex-direction: column;
+        gap: 5px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .about article div:last-child {
+        flex-direction: column;
+        gap: 1.25rem;
+        align-items: flex-start;
+    }
+
+    .about .left {
+        display: flex;
+    }
+
+    #modal {
+        padding: 1.8rem;
+        width: 90%;
+    }
+
+    .content-input input[type=radio] + i{
+        top: 2.1rem;
+    }
+
+    #modal .left {
+        display: none;
+    }
+
+    .left-mobile {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .left-mobile span {
+        font-size: 0.9rem;
+        color: hsl(0, 0%, 48%);
+    }
+
+    .left-mobile h4 {
+        font-size: 1.2rem;
+    }
+
+    #modal .introduction div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #modal form > label {
+        padding: 1.8rem 1.8rem 1.8rem 2.5rem;
+    }
+
+    #modal form > label p {
+        margin-bottom: 1.8rem;
+    }
+
+    .submit > div {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .submit hr {
+        top: 65%;
+    }
+
+    .pledge-quantity {
+        align-self: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    input[type=number] {
+        width: 100%;
+    }
+
+    #thanks {
+        width: 90%;
+        padding: 1.8rem;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .header {
+        position: relative;
+        background-image: url(../images/image-hero-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .main {
+        padding: 5%;
+    }
+
+    .container {
+        gap: 1.25rem;
+    }
+
+    .intro {
+        padding: 1.8rem;
+    }
+
+    .intro img {
+        top: -15%;
+    }
+
+    .stats {
+        padding: 1.8rem;
+    }
+
+    .stats section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1.8rem;
+        width: 100%;
+    }
+
+    .stats hr {
+        width: 100%;
+    }
+
+    .about {
+        padding: 1.8rem;
+    }
+
+    .about section:last-child article {
+        padding: 1.25rem;
+    }
+
+    .about article > div:first-child {
+        flex-direction: column;
+        gap: 5px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .about article div:last-child {
+        flex-direction: column;
+        gap: 1.25rem;
+        align-items: flex-start;
+    }
+
+    .about .left {
+        display: flex;
+    }
+
+    #modal {
+        padding: 1.8rem;
+        width: 90%;
+    }
+
+    #thanks {
+        width: 90%;
+        padding: 1.8rem;
+        text-align: center;
+    }
+}
