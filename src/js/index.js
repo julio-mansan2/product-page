@@ -36,17 +36,32 @@ for (let i = 0; i < rewardButton.length; i++) {
     })
 }
 
-for (let e = 0; e < inputRadio.length; e++) {
-    inputRadio[e].addEventListener('click', function () {
-        if (inputRadio[e].checked === true) {
-            modalOptions[e].classList.add('border-check')
-            modalOptions[e].classList.remove('normal-border')
-        } else if (inputRadio[e].checked === false / modalOptions[e].classList.contains('border-check')) {
-            modalOptions[e].classList.remove('border-check')
-            modalOptions[e].classList.add('normal-border')
-        }
-    } )
-}
+inputRadio[0].addEventListener('click', function () {
+    modalOptions[0].classList.add('border-check')
+    modalOptions[0].classList.remove('normal-border')
+    modalOptions[1].classList.remove('border-check')
+    modalOptions[1].classList.add('normal-border')
+    modalOptions[2].classList.remove('border-check')
+    modalOptions[2].classList.add('normal-border')
+})
+
+inputRadio[1].addEventListener('click', function () {
+    modalOptions[0].classList.remove('border-check')
+    modalOptions[0].classList.add('normal-border')
+    modalOptions[1].classList.add('border-check')
+    modalOptions[1].classList.remove('normal-border')
+    modalOptions[2].classList.remove('border-check')
+    modalOptions[2].classList.add('normal-border')
+})
+
+inputRadio[2].addEventListener('click', function () {
+    modalOptions[0].classList.remove('border-check')
+    modalOptions[0].classList.add('normal-border')
+    modalOptions[1].classList.remove('border-check')
+    modalOptions[1].classList.add('normal-border')
+    modalOptions[2].classList.add('border-check')
+    modalOptions[2].classList.remove('normal-border')
+})
 
 for (let e = 0; e < inputSubmit.length; e++) {
     inputSubmit[e].addEventListener('click', function () {
