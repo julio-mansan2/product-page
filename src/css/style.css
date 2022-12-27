@@ -462,8 +462,16 @@ button:hover {
 .pledge-quantity {
     display: flex;
     width: 40%;
+    position: relative;
     gap: 1.25rem;
     align-self: flex-end;
+}
+
+.pledge-quantity label {
+    position: absolute;
+    color: var(--dark-gray);
+    top: 10px;
+    left: 10px;
 }
 
 .radio:checked ~ .submit {
@@ -473,8 +481,10 @@ button:hover {
 
 input[type="number"] {
     height: 1.8rem;
-    width: 100%;
+    width: 40%;
+    text-align: center;
     padding: 1.25rem;
+    padding-left: 1.50rem;
     align-self: center;
     border-radius: 6.25rem;
     border: 1px solid var(--dark-gray);
